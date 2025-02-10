@@ -4,7 +4,10 @@ from aiohttp import web
 from plugins import web_server
 
 import pyromod.listen
-from pyrogram import utils as pyroutils
+from pyrogram import from utils as pyroutils
+
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
